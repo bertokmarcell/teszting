@@ -1,0 +1,37 @@
+*{box-sizing: border-box;}
+
+
+header,footer,nav,article,aside{
+    border: 1px solid salmon;
+    padding: 10px;
+    flex: 100%;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    flex:0 0 100%
+}
+footer{
+    flex:0 0 100%;
+}
+article{
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+aside{
+    flex: 0 0 50%;
+}
+article div{
+    flex: 1 0 20%;
+    border: 1px solid salmon;
+}
+@media screen and (max-width:800px) {
+    main{
+        flex-direction: column;
+    }
+    
+}
